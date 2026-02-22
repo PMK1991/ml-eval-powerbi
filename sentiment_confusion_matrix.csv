@@ -1,0 +1,10 @@
+actual_sentiment,predicted_sentiment,count
+Negative,Negative,15
+Negative,Neutral,0
+Negative,Positive,21
+Neutral,Negative,1
+Neutral,Neutral,5
+Neutral,Positive,12
+Positive,Negative,0
+Positive,Neutral,0
+Positive,Positive,93
