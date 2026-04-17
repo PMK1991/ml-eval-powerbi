@@ -1,6 +1,7 @@
 """
 Train sentiment classification model with 3 categories: Positive, Negative, Neutral
 """
+import os
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -10,6 +11,10 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, f1_score
 import warnings
 warnings.filterwarnings('ignore')
+
+# Resolve paths relative to project root
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 
 # Sentiment mapping to 3 categories
 POSITIVE = [
@@ -76,7 +81,7 @@ def categorize_sentiment(sentiment):
         return 'Neutral'
 
 # Load data
-df = pd.read_csv('sentimentdataset.csv')
+df = pd.read_csv(os.path.join(DATA_DIR, 'sentimentdataset.csv'))
 print(f'Dataset loaded: {df.shape}')
 
 # Clean
@@ -172,17 +177,17 @@ test_results.columns = ['Text', 'original_sentiment', 'actual_sentiment', 'predi
                         'Timestamp', 'Date', 'Year', 'Month', 'Week', 'Day', 'Platform', 'Country']
 test_results['is_correct'] = (test_results['actual_label'] == test_results['predicted_label']).astype(int)
 
-test_results.to_csv('sentiment_test_results.csv', index=False)
-f1_by_day.to_csv('sentiment_f1_by_day.csv', index=False)
-f1_by_week.to_csv('sentiment_f1_by_week.csv', index=False)
-f1_by_month.to_csv('sentiment_f1_by_month.csv', index=False)
+test_results.to_csv(os.path.join(DATA_DIR, 'sentiment_test_results.csv'), index=False)
+f1_by_day.to_csv(os.path.join(DATA_DIR, 'sentiment_f1_by_day.csv'), index=False)
+f1_by_week.to_csv(os.path.join(DATA_DIR, 'sentiment_f1_by_week.csv'), index=False)
+f1_by_month.to_csv(os.path.join(DATA_DIR, 'sentiment_f1_by_month.csv'), index=False)
 
 # Confusion matrix for Power BI
 cm_data = []
 for i, actual in enumerate(target_names):
     for j, predicted in enumerate(target_names):
         cm_data.append({'actual_sentiment': actual, 'predicted_sentiment': predicted, 'count': int(cm[i][j])})
-pd.DataFrame(cm_data).to_csv('sentiment_confusion_matrix.csv', index=False)
+pd.DataFrame(cm_data).to_csv(os.path.join(DATA_DIR, 'sentiment_confusion_matrix.csv'), index=False)
 
 print(f'\n{"="*50}')
 print('Files saved:')

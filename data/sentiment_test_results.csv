@@ -10,17 +10,17 @@ Excitement builds while preparing for a surprise celebration.     ,Positive,Posi
 "Participated in a local theater production, proving that the stage belongs to every age. #TheaterProduction #SeniorActor ",Positive,Positive,2,2,2023-07-09 22:30:00,2023-07-09,2023,7,27,9, Facebook , USA,1
  Compassion in volunteering for a local charity.       ,Positive,Positive,2,2,2015-12-18 14:20:00,2015-12-18,2015,12,51,18, Facebook , USA      ,1
 "Rediscovered the joy of cooking traditional family recipes. The kitchen, a place of cherished memories. #FamilyRecipes #SeniorCooking ",Positive,Positive,2,2,2023-06-27 17:45:00,2023-06-27,2023,6,26,27, Twitter , USA,1
- Confusion surrounds me as I navigate through life's choices. ,Neutral,Positive,1,2,2023-03-02 13:15:00,2023-03-02,2023,3,9,2, Instagram , USA   ,0
+ Confusion surrounds me as I navigate through life's choices. ,Neutral,Neutral,1,1,2023-03-02 13:15:00,2023-03-02,2023,3,9,2, Instagram , USA   ,1
 Pride in achieving a personal milestone in career progression.   ,Positive,Positive,2,2,2016-04-15 14:50:00,2016-04-15,2016,4,15,15, Facebook , UK                ,1
 " Charting a course through the waves of hopeful anticipation, a sailor steering towards the shores of dreams yet unexplored. ",Positive,Positive,2,2,2022-10-30 11:40:00,2022-10-30,2022,10,43,30, Twitter , Australia ,1
-"Lost in the pages of a captivating novel, transported to another world. ",Positive,Positive,2,2,2019-09-28 19:45:00,2019-09-28,2019,9,39,28, Twitter  , UK              ,1
+"Lost in the pages of a captivating novel, transported to another world. ",Positive,Negative,2,0,2019-09-28 19:45:00,2019-09-28,2019,9,39,28, Twitter  , UK              ,0
  Serenity found in the pages of a favorite book.        ,Positive,Positive,2,2,2011-09-22 19:30:00,2011-09-22,2011,9,38,22, Instagram , UK          ,1
 "A surprise gift, wrapped in anticipation, unfolds a moment of delight and wonder. ",Positive,Positive,2,2,2023-02-05 19:30:00,2023-02-05,2023,2,5,5, Twitter , Australia ,1
 " Wandering through the desert of loneliness, each step a heavy sigh, mirages of connection shimmering but never materializing. ",Negative,Negative,0,0,2017-07-20 11:45:00,2017-07-20,2017,7,29,20, Twitter , USA ,1
 Rejuvenated by the salty breeze and the sound of waves at the seaside. ,Positive,Positive,2,2,2021-09-20 14:30:00,2021-09-20,2021,9,38,20, Twitter  , Spain           ,1
 Bonding with friends over the latest K-pop sensation. Fangirling at its finest! ,Positive,Positive,2,2,2023-08-09 22:30:00,2023-08-09,2023,8,32,9, Facebook , USA,1
 Convinced the teacher to have class outdoors. Learning equations with a side of fresh air! ,Positive,Positive,2,2,2023-08-06 14:00:00,2023-08-06,2023,8,31,6, Facebook , USA,1
- The state of corruption in our society is utterly disgusting. ,Negative,Positive,0,2,2023-02-21 18:20:00,2023-02-21,2023,2,8,21, Twitter  , UK         ,0
+ The state of corruption in our society is utterly disgusting. ,Negative,Negative,0,0,2023-02-21 18:20:00,2023-02-21,2023,2,8,21, Twitter  , UK         ,1
 Enveloped in serenity while practicing mindfulness by the lake.    ,Positive,Positive,2,2,2017-10-20 08:15:00,2017-10-20,2017,10,42,20, Instagram , Canada           ,1
  Feeling accomplished after a productive day.       ,Positive,Positive,2,2,2023-01-29 17:00:00,2023-01-29,2023,1,4,29, Instagram , India ,1
 "At the golf tournament, the golfer's precision and focus lead to a stunning victory, leaving spectators in awe of their exceptional skill. ",Positive,Positive,2,2,2016-04-10 18:30:00,2016-04-10,2016,4,14,10, Instagram , Scotland ,1
@@ -33,7 +33,7 @@ Spontaneously booked a weekend getaway. Adventure awaits! #TravelBug #WeekendEsc
 Survived a group project without any drama. Miracles do happen. #GroupProjectSuccess #TeenAchievements ,Positive,Positive,2,2,2023-05-26 14:20:00,2023-05-26,2023,5,21,26, Twitter , UK,1
 "Exploring the ancient ruins of Angkor Wat, each stone whispering stories of Khmer civilization. ",Positive,Positive,2,2,2016-11-22 13:00:00,2016-11-22,2016,11,47,22, Instagram , Cambodia ,1
 Spent an hour choosing the perfect filter for a selfie. The struggle for that Instagram aesthetic is real. #SelfieQueen #TeenVibes ,Positive,Positive,2,2,2023-05-22 14:30:00,2023-05-22,2023,5,21,22, Facebook , UK,1
-" Fueled by curiosity, venturing into uncharted realms, a fearless explorer of the mysteries of the world. ",Neutral,Neutral,1,1,2022-12-01 09:15:00,2022-12-01,2022,12,48,1, Facebook , India         ,1
+" Fueled by curiosity, venturing into uncharted realms, a fearless explorer of the mysteries of the world. ",Neutral,Positive,1,2,2022-12-01 09:15:00,2022-12-01,2022,12,48,1, Facebook , India         ,0
  A surprise visit from an old friend brought tears of joy. ,Positive,Positive,2,2,2023-02-25 14:45:00,2023-02-25,2023,2,8,25, Instagram , USA          ,1
 Attempting to beat the record for the most consecutive cartwheels. Cartwheel challenge: Underway! ,Positive,Positive,2,2,2023-09-05 12:30:00,2023-09-05,2023,9,36,5, Twitter , Canada,1
  Enthusiasm for a DIY home improvement project.       ,Positive,Positive,2,2,2018-04-15 16:00:00,2018-04-15,2018,4,15,15, Facebook , Australia   ,1
@@ -55,7 +55,7 @@ Radiant joy akin to blooming flowers on a sun-kissed spring morning. ,Positive,P
 " Confident strides in the dance of life, a ballroom where self-assuredness leads, twirling through challenges with grace. ",Positive,Positive,2,2,2021-01-15 13:00:00,2021-01-15,2021,1,2,15, Facebook , Canada ,1
 " A numbness settles over me, a shield against the overwhelming emotions life throws my way. ",Negative,Positive,0,2,2021-08-10 14:00:00,2021-08-10,2021,8,32,10, Twitter  , India        ,0
 " Frustration boils over, a volcanic eruption of emotions.",Negative,Positive,0,2,2017-04-10 14:45:00,2017-04-10,2017,4,15,10, Twitter  , USA          ,0
-" Resentment festers, a wound that refuses to heal.  ",Negative,Positive,0,2,2017-01-12 12:00:00,2017-01-12,2017,1,2,12, Twitter  , India         ,0
+" Resentment festers, a wound that refuses to heal.  ",Negative,Negative,0,0,2017-01-12 12:00:00,2017-01-12,2017,1,2,12, Twitter  , India         ,1
 " Dismissive glances, a fortress built with indifference, walls impenetrable to the pleas of understanding and recognition. ",Negative,Positive,0,2,2018-05-10 14:00:00,2018-05-10,2018,5,19,10, Twitter , UK ,0
 Spent hours creating the perfect playlist for every mood. Music is my therapy. #PlaylistMaker #TeenMusicLover ,Positive,Positive,2,2,2023-06-03 21:15:00,2023-06-03,2023,6,22,3, Facebook , Canada,1
 " Floating on clouds of inspiration, an artist painting the sky with strokes of creativity, creating a masterpiece of dreams. ",Positive,Positive,2,2,2021-12-08 14:30:00,2021-12-08,2021,12,49,8, Twitter , India ,1
@@ -63,7 +63,7 @@ Spent hours creating the perfect playlist for every mood. Music is my therapy. #
 Curiosity piqued by the mysteries of an ancient archaeological site.,Neutral,Neutral,1,1,2015-11-08 10:00:00,2015-11-08,2015,11,45,8, Facebook , Australia          ,1
 " Navigating the river of contentment, a serene boat cruise through the tranquil waters of inner peace and acceptance. ",Positive,Positive,2,2,2019-04-27 09:50:00,2019-04-27,2019,4,17,27, Instagram , Canada ,1
 " Embraced by the hopeful dawn, a gardener sowing seeds of optimism, tending to the blooms of a brighter tomorrow. ",Positive,Positive,2,2,2022-07-17 06:15:00,2022-07-17,2022,7,28,17, Instagram , India ,1
-"In the garden of broken dreams, petals fall, a silent testimony to shattered hopes. ",Negative,Negative,0,0,2018-06-10 13:30:00,2018-06-10,2018,6,23,10, Twitter , UK ,1
+"In the garden of broken dreams, petals fall, a silent testimony to shattered hopes. ",Negative,Positive,0,2,2018-06-10 13:30:00,2018-06-10,2018,6,23,10, Twitter , UK ,0
  The new movie release is a must-watch!             ,Positive,Positive,2,2,2023-01-16 19:30:00,2023-01-16,2023,1,3,16, Instagram , USA    ,1
 "In the celebration of success, fireworks of accomplishment light up the night sky of triumph. ",Positive,Positive,2,2,2017-11-15 22:30:00,2017-11-15,2017,11,46,15, Instagram , Japan ,1
 "Started a book club for seniors, where discussions are as lively as the characters in the novels. #BookClub #SeniorReaders ",Positive,Positive,2,2,2023-07-07 19:45:00,2023-07-07,2023,7,27,7, Instagram , UK,1
@@ -88,7 +88,7 @@ Dealing with a personal setback. Sometimes life throws unexpected challenges. ,N
 "Organizing a virtual talent show during challenging times, bringing smiles to classmates' faces! ",Positive,Positive,2,2,2020-11-15 15:15:00,2020-11-15,2020,11,46,15, Instagram , USA,1
 "Despair clouds the mind, feeling adrift in an endless sea of darkness. ",Negative,Negative,0,0,2016-05-15 22:30:00,2016-05-15,2016,5,19,15, Instagram , Australia        ,1
 " Curiosity driving the exploration of the unknown, a seeker of knowledge in uncharted territories. ",Neutral,Neutral,1,1,2022-05-08 08:45:00,2022-05-08,2022,5,18,8, Instagram , UK            ,1
-"Lost in the maze of curiosity, each twist and turn unveils the treasures of discovery. ",Neutral,Neutral,1,1,2018-09-22 12:45:00,2018-09-22,2018,9,38,22, Instagram , India ,1
+"Lost in the maze of curiosity, each twist and turn unveils the treasures of discovery. ",Neutral,Negative,1,0,2018-09-22 12:45:00,2018-09-22,2018,9,38,22, Instagram , India ,0
 Successfully organized a surprise birthday party for a friend. Party planning expert mode: Achieved! ,Positive,Positive,2,2,2023-08-11 18:45:00,2023-08-11,2023,8,32,11, Twitter , Canada,1
 Mastering the art of the perfect doodle during boring classes. Doodles: A+! ,Positive,Positive,2,2,2023-08-14 16:15:00,2023-08-14,2023,8,33,14, Twitter , USA,1
 "Like a withered rose in the garden of love, petals fall, a silent surrender to time. ",Negative,Positive,0,2,2023-02-10 14:30:00,2023-02-10,2023,2,6,10, Instagram , France ,0
@@ -123,7 +123,7 @@ Receiving a heartfelt letter from a pen pal in another country. Connecting acros
  Reverence for the historical significance of a landmark.,Positive,Positive,2,2,2017-11-01 15:30:00,2017-11-01,2017,11,44,1, Twitter  , Australia ,1
 "Reconnecting with old friends over a cup of tea. Friendship, the true essence of companionship. #OldFriends #Companionship ",Positive,Positive,2,2,2023-06-18 11:30:00,2023-06-18,2023,6,24,18, Twitter , UK,1
 Exploring a new hobby of photography during free time. Capturing moments through a lens. ,Neutral,Positive,1,2,2023-10-10 14:15:00,2023-10-10,2023,10,41,10, Instagram , UK,0
-" Jealousy, a festering wound, the pain intensifying with each glance at the garden of others' achievements, blooming beyond the fence. ",Negative,Positive,0,2,2018-03-17 14:45:00,2018-03-17,2018,3,11,17, Twitter , UK ,0
+" Jealousy, a festering wound, the pain intensifying with each glance at the garden of others' achievements, blooming beyond the fence. ",Negative,Negative,0,0,2018-03-17 14:45:00,2018-03-17,2018,3,11,17, Twitter , UK ,1
 Decided to learn a new instrument. Day one: Still trying to figure out how to hold it. #MusicNovice #LearningJourney ,Negative,Positive,0,2,2023-06-02 14:30:00,2023-06-02,2023,6,22,2, Instagram , UK,0
 "In the ruins of hope, echoes of shattered dreams whisper tales of loss. ",Negative,Negative,0,0,2021-03-15 22:45:00,2021-03-15,2021,3,11,15, Facebook , Brazil ,1
 "Shattered by the echoes of a shattered dream, fragments of hope scattered. ",Negative,Negative,0,0,2017-09-10 19:15:00,2017-09-10,2017,9,36,10, Twitter , Australia ,1

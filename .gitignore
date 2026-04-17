@@ -19,7 +19,15 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+nul
 
 # Temporary files
 *.tmp
 *.bak
+
+# MCP config (contains API tokens)
+.mcp.json
+
+# Generated reports (regenerate via scripts/)
+reports/*.html
+reports/*.png

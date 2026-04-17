@@ -5,7 +5,8 @@ Run this to generate Power Query M code and DAX measures for manual import.
 
 import os
 
-folder = r"C:\Users\praskulkarni\Downloads\aiml_taxonomy_prediction"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+folder = os.path.join(PROJECT_ROOT, 'data')
 
 print("=" * 60)
 print("POWER BI MANUAL SETUP INSTRUCTIONS")

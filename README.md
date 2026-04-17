@@ -2,21 +2,30 @@
 
 This project evaluates the accuracy of ML classification models and visualizes results in Power BI.
 
-## Contents
+## Project Structure
 
-- **Jupyter Notebooks**: Data exploration and ML model evaluation
-  - `iris_toy_dataset.ipynb` - Iris dataset classification example
-  - `sentiment_analysis.ipynb` - Sentiment classification analysis
-
-- **Python Scripts**:
-  - `train_3class_model.py` - Train 3-class classification models
-  - `create_powerbi_report.py` - Generate Power BI report data
-
-- **Power BI**:
-  - `iris_toy_data.pbix` - Power BI report for iris classification
-
-- **Data**:
-  - CSV files with test results, F1 scores, and confusion matrices
+```
+ml-eval-powerbi/
+├── data/                   # Datasets and model output CSVs
+│   ├── sentimentdataset.csv
+│   ├── iris_test_results.csv
+│   ├── sentiment_test_results.csv
+│   ├── sentiment_confusion_matrix.csv
+│   ├── sentiment_f1_by_day.csv
+│   ├── sentiment_f1_by_week.csv
+│   └── sentiment_f1_by_month.csv
+├── notebooks/              # Jupyter notebooks for exploration
+│   ├── iris_toy_dataset.ipynb
+│   └── sentiment_analysis.ipynb
+├── scripts/                # Python scripts
+│   ├── train_3class_model.py
+│   ├── create_powerbi_report.py
+│   ├── generate_html_report.py
+│   └── generate_summary_report.py
+├── reports/                # Generated reports and Power BI files
+│   └── iris_toy_data.pbix
+└── medium_mcp_server/      # MCP server for Medium API integration
+```
 
 ## Metrics
 
