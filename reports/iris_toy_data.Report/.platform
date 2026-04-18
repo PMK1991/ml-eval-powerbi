@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "iris_toy_data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "62e9976c-e5ec-4875-8f69-cbf68efb912f"
+  }
+}

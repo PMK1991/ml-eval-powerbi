@@ -1,148 +1,51 @@
-Text,actual_sentiment,predicted_sentiment,actual_label,predicted_label,Timestamp,Date,Year,Month,Week,Day,Platform,Country,is_correct
-Experimenting with a new recipe for a school bake sale. Baking adventures in the kitchen. ,Neutral,Positive,1,2,2023-10-05 14:15:00,2023-10-05,2023,10,40,5, Instagram , USA,0
-" Boredom lingers, a stagnant pool of indifference.  ",Neutral,Positive,1,2,2021-10-02 19:00:00,2021-10-02,2021,10,39,2, Facebook , Canada        ,0
-Excitement builds while preparing for a surprise celebration.     ,Positive,Positive,2,2,2023-03-05 15:00:00,2023-03-05,2023,3,9,5, Facebook , Australia          ,1
-"Got dressed for the day, then remembered it's Saturday. Oops. #WeekendVibes #TeenStruggles ",Neutral,Positive,1,2,2023-05-25 19:00:00,2023-05-25,2023,5,21,25, Facebook , USA,0
- Celebrating a milestone at work! 🎉               ,Positive,Positive,2,2,2023-01-22 14:30:00,2023-01-22,2023,1,3,22, Facebook , Canada  ,1
-"Painful echoes of a love once cherished, now lost in the abyss of time. ",Negative,Negative,0,0,2016-11-22 09:45:00,2016-11-22,2016,11,47,22, Facebook , Netherlands  ,1
-" Embracing the ebb and flow of life, finding acceptance in the dance of existence. ",Positive,Positive,2,2,2023-01-10 16:20:00,2023-01-10,2023,1,2,10, Instagram , UK           ,1
- Exploring local art galleries this weekend.        ,Positive,Positive,2,2,2023-01-30 11:30:00,2023-01-30,2023,1,5,30, Facebook , USA      ,1
-"Participated in a local theater production, proving that the stage belongs to every age. #TheaterProduction #SeniorActor ",Positive,Positive,2,2,2023-07-09 22:30:00,2023-07-09,2023,7,27,9, Facebook , USA,1
- Compassion in volunteering for a local charity.       ,Positive,Positive,2,2,2015-12-18 14:20:00,2015-12-18,2015,12,51,18, Facebook , USA      ,1
-"Rediscovered the joy of cooking traditional family recipes. The kitchen, a place of cherished memories. #FamilyRecipes #SeniorCooking ",Positive,Positive,2,2,2023-06-27 17:45:00,2023-06-27,2023,6,26,27, Twitter , USA,1
- Confusion surrounds me as I navigate through life's choices. ,Neutral,Neutral,1,1,2023-03-02 13:15:00,2023-03-02,2023,3,9,2, Instagram , USA   ,1
-Pride in achieving a personal milestone in career progression.   ,Positive,Positive,2,2,2016-04-15 14:50:00,2016-04-15,2016,4,15,15, Facebook , UK                ,1
-" Charting a course through the waves of hopeful anticipation, a sailor steering towards the shores of dreams yet unexplored. ",Positive,Positive,2,2,2022-10-30 11:40:00,2022-10-30,2022,10,43,30, Twitter , Australia ,1
-"Lost in the pages of a captivating novel, transported to another world. ",Positive,Negative,2,0,2019-09-28 19:45:00,2019-09-28,2019,9,39,28, Twitter  , UK              ,0
- Serenity found in the pages of a favorite book.        ,Positive,Positive,2,2,2011-09-22 19:30:00,2011-09-22,2011,9,38,22, Instagram , UK          ,1
-"A surprise gift, wrapped in anticipation, unfolds a moment of delight and wonder. ",Positive,Positive,2,2,2023-02-05 19:30:00,2023-02-05,2023,2,5,5, Twitter , Australia ,1
-" Wandering through the desert of loneliness, each step a heavy sigh, mirages of connection shimmering but never materializing. ",Negative,Negative,0,0,2017-07-20 11:45:00,2017-07-20,2017,7,29,20, Twitter , USA ,1
-Rejuvenated by the salty breeze and the sound of waves at the seaside. ,Positive,Positive,2,2,2021-09-20 14:30:00,2021-09-20,2021,9,38,20, Twitter  , Spain           ,1
-Bonding with friends over the latest K-pop sensation. Fangirling at its finest! ,Positive,Positive,2,2,2023-08-09 22:30:00,2023-08-09,2023,8,32,9, Facebook , USA,1
-Convinced the teacher to have class outdoors. Learning equations with a side of fresh air! ,Positive,Positive,2,2,2023-08-06 14:00:00,2023-08-06,2023,8,31,6, Facebook , USA,1
- The state of corruption in our society is utterly disgusting. ,Negative,Negative,0,0,2023-02-21 18:20:00,2023-02-21,2023,2,8,21, Twitter  , UK         ,1
-Enveloped in serenity while practicing mindfulness by the lake.    ,Positive,Positive,2,2,2017-10-20 08:15:00,2017-10-20,2017,10,42,20, Instagram , Canada           ,1
- Feeling accomplished after a productive day.       ,Positive,Positive,2,2,2023-01-29 17:00:00,2023-01-29,2023,1,4,29, Instagram , India ,1
-"At the golf tournament, the golfer's precision and focus lead to a stunning victory, leaving spectators in awe of their exceptional skill. ",Positive,Positive,2,2,2016-04-10 18:30:00,2016-04-10,2016,4,14,10, Instagram , Scotland ,1
-" Immersed in a state of emotional numbness, a shield against the storm of daily struggles. ",Negative,Negative,0,0,2021-12-01 15:30:00,2021-12-01,2021,12,48,1, Facebook , USA          ,1
-" Proudly scaling the peaks of achievement, a mountaineer conquering challenges and planting the flag of success. ",Positive,Positive,2,2,2020-01-05 08:45:00,2020-01-05,2020,1,1,5, Twitter , USA ,1
-Received a not-so-great grade on a major project. Academic frustration setting in. ,Negative,Positive,0,2,2023-09-16 17:30:00,2023-09-16,2023,9,37,16, Facebook , UK,0
-" Melancholy painting the world in hues of nostalgia, a canvas of bittersweet memories. ",Negative,Positive,0,2,2020-01-05 20:00:00,2020-01-05,2020,1,1,5, Instagram , USA          ,0
-" Fearful whispers in the dark, the mind haunted by the specter of the unknown, shadows dancing to the rhythm of anxiety's tune. ",Negative,Positive,0,2,2023-07-14 23:00:00,2023-07-14,2023,7,28,14, Twitter , UK ,0
-Spontaneously booked a weekend getaway. Adventure awaits! #TravelBug #WeekendEscape ,Positive,Positive,2,2,2023-06-05 10:00:00,2023-06-05,2023,6,23,5, Instagram , UK,1
-Survived a group project without any drama. Miracles do happen. #GroupProjectSuccess #TeenAchievements ,Positive,Positive,2,2,2023-05-26 14:20:00,2023-05-26,2023,5,21,26, Twitter , UK,1
-"Exploring the ancient ruins of Angkor Wat, each stone whispering stories of Khmer civilization. ",Positive,Positive,2,2,2016-11-22 13:00:00,2016-11-22,2016,11,47,22, Instagram , Cambodia ,1
-Spent an hour choosing the perfect filter for a selfie. The struggle for that Instagram aesthetic is real. #SelfieQueen #TeenVibes ,Positive,Positive,2,2,2023-05-22 14:30:00,2023-05-22,2023,5,21,22, Facebook , UK,1
-" Fueled by curiosity, venturing into uncharted realms, a fearless explorer of the mysteries of the world. ",Neutral,Positive,1,2,2022-12-01 09:15:00,2022-12-01,2022,12,48,1, Facebook , India         ,0
- A surprise visit from an old friend brought tears of joy. ,Positive,Positive,2,2,2023-02-25 14:45:00,2023-02-25,2023,2,8,25, Instagram , USA          ,1
-Attempting to beat the record for the most consecutive cartwheels. Cartwheel challenge: Underway! ,Positive,Positive,2,2,2023-09-05 12:30:00,2023-09-05,2023,9,36,5, Twitter , Canada,1
- Enthusiasm for a DIY home improvement project.       ,Positive,Positive,2,2,2018-04-15 16:00:00,2018-04-15,2018,4,15,15, Facebook , Australia   ,1
-Missing out on a long-anticipated event due to unexpected circumstances. A day filled with sadness. ,Negative,Positive,0,2,2023-10-01 14:15:00,2023-10-01,2023,10,39,1, Facebook , UK,0
- Finding acceptance in the midst of life's challenges.   ,Positive,Positive,2,2,2023-02-16 18:20:00,2023-02-16,2023,2,7,16, Facebook , Canada     ,1
-Dealing with unfounded rumors circulating about personal life. Rumors can be hurtful. ,Negative,Positive,0,2,2023-09-22 18:20:00,2023-09-22,2023,9,38,22, Facebook , UK,0
-"Connecting with the melody of a live orchestra, the music enthusiast experiences a symphony that resonates deep within the soul. ",Positive,Positive,2,2,2016-08-22 19:45:00,2016-08-22,2016,8,34,22, Facebook , UK ,1
- Tenderness in a heartfelt message to a loved one.    ,Positive,Positive,2,2,2016-12-25 19:30:00,2016-12-25,2016,12,51,25, Facebook , UK          ,1
-Embarking on a mission to find the best burger joint in town. Burger connoisseur: Reporting for duty! ,Positive,Positive,2,2,2023-08-31 20:15:00,2023-08-31,2023,8,35,31, Twitter , UK,1
-" Wrapped in the cloak of emotional numbness, a shield against the storms of life's turbulence. ",Negative,Negative,0,0,2021-11-30 15:30:00,2021-11-30,2021,11,48,30, Instagram , Canada        ,1
- Enjoying a quiet evening with a book and some tea.      ,Positive,Positive,2,2,2023-02-14 19:45:00,2023-02-14,2023,2,7,14, Facebook , Canada       ,1
-Attempting to impress the teacher with an elaborate science experiment. Science geek mode: Activated! ,Positive,Positive,2,2,2023-09-03 22:00:00,2023-09-03,2023,9,35,3, Twitter , UK,1
-Encountering online toxicity during a gaming session. Hateful comments can ruin the fun. ,Negative,Positive,0,2,2023-09-26 14:15:00,2023-09-26,2023,9,39,26, Twitter , USA,0
-Embracing the thrill of speed on a rollercoaster's exhilarating twists. ,Positive,Positive,2,2,2020-07-25 12:45:00,2020-07-25,2020,7,30,25, Facebook , Germany         ,1
-"Swaying to Ed Sheeran's acoustic melodies, a serene evening filled with 'Perfect' moments. ",Positive,Positive,2,2,2020-08-18 19:00:00,2020-08-18,2020,8,34,18, Twitter , UK ,1
-Radiant joy akin to blooming flowers on a sun-kissed spring morning. ,Positive,Positive,2,2,2022-05-05 10:15:00,2022-05-05,2022,5,18,5, Facebook , Netherlands     ,1
-" Whispering tales of inspiration to the stars, a storyteller crafting constellations from the threads of imagination. ",Positive,Positive,2,2,2020-08-29 20:45:00,2020-08-29,2020,8,35,29, Facebook , UK ,1
-"Spent hours on a TikTok dance, only to realize I have two left feet. Dance fail: Unleashed! ",Negative,Positive,0,2,2023-08-18 16:30:00,2023-08-18,2023,8,33,18, Facebook , USA,0
-" Confident strides in the dance of life, a ballroom where self-assuredness leads, twirling through challenges with grace. ",Positive,Positive,2,2,2021-01-15 13:00:00,2021-01-15,2021,1,2,15, Facebook , Canada ,1
-" A numbness settles over me, a shield against the overwhelming emotions life throws my way. ",Negative,Positive,0,2,2021-08-10 14:00:00,2021-08-10,2021,8,32,10, Twitter  , India        ,0
-" Frustration boils over, a volcanic eruption of emotions.",Negative,Positive,0,2,2017-04-10 14:45:00,2017-04-10,2017,4,15,10, Twitter  , USA          ,0
-" Resentment festers, a wound that refuses to heal.  ",Negative,Negative,0,0,2017-01-12 12:00:00,2017-01-12,2017,1,2,12, Twitter  , India         ,1
-" Dismissive glances, a fortress built with indifference, walls impenetrable to the pleas of understanding and recognition. ",Negative,Positive,0,2,2018-05-10 14:00:00,2018-05-10,2018,5,19,10, Twitter , UK ,0
-Spent hours creating the perfect playlist for every mood. Music is my therapy. #PlaylistMaker #TeenMusicLover ,Positive,Positive,2,2,2023-06-03 21:15:00,2023-06-03,2023,6,22,3, Facebook , Canada,1
-" Floating on clouds of inspiration, an artist painting the sky with strokes of creativity, creating a masterpiece of dreams. ",Positive,Positive,2,2,2021-12-08 14:30:00,2021-12-08,2021,12,49,8, Twitter , India ,1
-" Drifting through the day with a nonchalant demeanor, embracing the art of indifference. ",Neutral,Positive,1,2,2023-02-10 17:00:00,2023-02-10,2023,2,6,10, Twitter  , UK            ,0
-Curiosity piqued by the mysteries of an ancient archaeological site.,Neutral,Neutral,1,1,2015-11-08 10:00:00,2015-11-08,2015,11,45,8, Facebook , Australia          ,1
-" Navigating the river of contentment, a serene boat cruise through the tranquil waters of inner peace and acceptance. ",Positive,Positive,2,2,2019-04-27 09:50:00,2019-04-27,2019,4,17,27, Instagram , Canada ,1
-" Embraced by the hopeful dawn, a gardener sowing seeds of optimism, tending to the blooms of a brighter tomorrow. ",Positive,Positive,2,2,2022-07-17 06:15:00,2022-07-17,2022,7,28,17, Instagram , India ,1
-"In the garden of broken dreams, petals fall, a silent testimony to shattered hopes. ",Negative,Positive,0,2,2018-06-10 13:30:00,2018-06-10,2018,6,23,10, Twitter , UK ,0
- The new movie release is a must-watch!             ,Positive,Positive,2,2,2023-01-16 19:30:00,2023-01-16,2023,1,3,16, Instagram , USA    ,1
-"In the celebration of success, fireworks of accomplishment light up the night sky of triumph. ",Positive,Positive,2,2,2017-11-15 22:30:00,2017-11-15,2017,11,46,15, Instagram , Japan ,1
-"Started a book club for seniors, where discussions are as lively as the characters in the novels. #BookClub #SeniorReaders ",Positive,Positive,2,2,2023-07-07 19:45:00,2023-07-07,2023,7,27,7, Instagram , UK,1
-Experiencing hate comments for expressing personal opinions. Online negativity prevails. ,Negative,Positive,0,2,2023-09-29 15:45:00,2023-09-29,2023,9,39,29, Twitter , USA,0
-Spent the day binge-watching a new series. Productivity level: Zero. #LazyDay #TVSeriesMarathon ,Positive,Positive,2,2,2023-05-31 15:30:00,2023-05-31,2023,5,22,31, Facebook , Canada,1
-" Embracing the beauty in imperfections, finding acceptance in the mosaic of life's unpredictable art. ",Positive,Positive,2,2,2023-06-15 16:20:00,2023-06-15,2023,6,24,15, Facebook , Australia    ,1
-Nostalgic memories flood in while revisiting childhood favorites. ,Neutral,Positive,1,2,2017-01-28 21:15:00,2017-01-28,2017,1,4,28, Facebook , Australia          ,0
-"Started a community garden, growing not just plants but friendships too. Green thumbs unite! #CommunityGarden #SeniorGardener ",Positive,Positive,2,2,2023-07-03 12:45:00,2023-07-03,2023,7,27,3, Twitter , Canada,1
-" Gazing towards the horizon with hopeful eyes, painting a canvas of dreams illuminated by the sun of optimism. ",Positive,Positive,2,2,2022-04-18 08:00:00,2022-04-18,2022,4,16,18, Instagram , India ,1
-"Attended a local jazz festival, tapping toes to the tunes that have stood the test of time. Music, a lifelong love affair. #JazzFestival #SeniorMusicLover ",Positive,Positive,2,2,2023-07-18 16:30:00,2023-07-18,2023,7,29,18, Facebook , USA,1
- Sending affectionate vibes to all my followers!          ,Positive,Positive,2,2,2023-02-15 16:00:00,2023-02-15,2023,2,7,15, Instagram ,USA,1
- Winter sports day at the local park.               ,Positive,Positive,2,2,2023-01-26 14:20:00,2023-01-26,2023,1,4,26, Twitter  , Canada   ,1
-"Rocking out to the guitar solos at a Queen tribute concert, a journey back in time with Freddie's spirit. ",Neutral,Positive,1,2,2018-12-02 22:15:00,2018-12-02,2018,12,48,2, Instagram , UK ,0
-" With a zestful heart, sprinting through fields of enthusiasm, chasing sunbeams and laughter in the meadows of joy. ",Positive,Positive,2,2,2023-03-30 16:30:00,2023-03-30,2023,3,13,30, Instagram , India ,1
-"In the spotlight at a Lady Gaga show, each costume change is a metamorphosis of creativity and artistry. ",Positive,Positive,2,2,2021-04-15 21:30:00,2021-04-15,2021,4,15,15, Twitter , USA ,1
- Political discussions heating up on the timeline.  ,Negative,Positive,0,2,2023-01-17 08:00:00,2023-01-17,2023,1,3,17, Twitter  , USA      ,0
-"Attended a wine tasting event, savoring the richness of flavors that age like fine wine. Cheers to the golden years! #WineTasting #SeniorWineLover ",Positive,Positive,2,2,2023-07-13 20:00:00,2023-07-13,2023,7,28,13, Instagram , UK,1
-Chasing dreams like a kite soaring high in the vast open sky.      ,Positive,Positive,2,2,2021-02-28 13:00:00,2021-02-28,2021,2,8,28, Twitter  , Australia         ,1
-Trying out a new study technique for upcoming exams. Exploring different learning strategies. ,Neutral,Positive,1,2,2023-10-02 16:45:00,2023-10-02,2023,10,40,2, Instagram , USA,0
-Dealing with a personal setback. Sometimes life throws unexpected challenges. ,Negative,Positive,0,2,2023-09-17 20:45:00,2023-09-17,2023,9,37,17, Twitter , USA,0
-" Dismissive gestures, a curtain drawn to shield the vulnerability, a stage where emotions take a backseat to the performance of indifference. ",Negative,Negative,0,0,2018-08-18 14:00:00,2018-08-18,2018,8,33,18, Instagram , Australia ,1
-"Organizing a virtual talent show during challenging times, bringing smiles to classmates' faces! ",Positive,Positive,2,2,2020-11-15 15:15:00,2020-11-15,2020,11,46,15, Instagram , USA,1
-"Despair clouds the mind, feeling adrift in an endless sea of darkness. ",Negative,Negative,0,0,2016-05-15 22:30:00,2016-05-15,2016,5,19,15, Instagram , Australia        ,1
-" Curiosity driving the exploration of the unknown, a seeker of knowledge in uncharted territories. ",Neutral,Neutral,1,1,2022-05-08 08:45:00,2022-05-08,2022,5,18,8, Instagram , UK            ,1
-"Lost in the maze of curiosity, each twist and turn unveils the treasures of discovery. ",Neutral,Negative,1,0,2018-09-22 12:45:00,2018-09-22,2018,9,38,22, Instagram , India ,0
-Successfully organized a surprise birthday party for a friend. Party planning expert mode: Achieved! ,Positive,Positive,2,2,2023-08-11 18:45:00,2023-08-11,2023,8,32,11, Twitter , Canada,1
-Mastering the art of the perfect doodle during boring classes. Doodles: A+! ,Positive,Positive,2,2,2023-08-14 16:15:00,2023-08-14,2023,8,33,14, Twitter , USA,1
-"Like a withered rose in the garden of love, petals fall, a silent surrender to time. ",Negative,Positive,0,2,2023-02-10 14:30:00,2023-02-10,2023,2,6,10, Instagram , France ,0
-Accidentally walked into the wrong classroom on the first day. Classroom mix-up: Awkward start! ,Negative,Positive,0,2,2023-09-09 17:30:00,2023-09-09,2023,9,36,9, Twitter , USA,0
-Decided to study for exams but ended up making memes about studying instead. Procrastination level: Expert. #ProcrastinationNation #TeenConfessions ,Positive,Positive,2,2,2023-05-24 13:15:00,2023-05-24,2023,5,21,24, Instagram , Canada,1
- New book release from my favorite author!          ,Positive,Positive,2,2,2023-01-30 15:45:00,2023-01-30,2023,1,5,30, Instagram , UK   ,1
- New painting in progress! 🎨                       ,Positive,Positive,2,2,2023-01-24 15:00:00,2023-01-24,2023,1,4,24, Facebook , Canada ,1
-"In the embrace of love, each heartbeat is a melody, dancing to the rhythm of affection. ",Positive,Positive,2,2,2022-11-15 20:45:00,2022-11-15,2022,11,46,15, Twitter , USA ,1
-" Standing tall, proud as an oak, the branches of achievement reaching towards the sky of accomplishment. ",Positive,Positive,2,2,2019-12-10 12:20:00,2019-12-10,2019,12,50,10, Twitter , Canada ,1
- Laughter is the best medicine—enjoying a comedy show. ,Positive,Positive,2,2,2023-02-13 19:30:00,2023-02-13,2023,2,7,13, Facebook , Canada    ,1
- Hopeful about the possibilities of a new journey.      ,Positive,Positive,2,2,2013-12-05 16:00:00,2013-12-05,2013,12,49,5, Twitter  , Canada    ,1
- The euphoria of a live music concert under the stars.  ,Positive,Positive,2,2,2021-06-19 14:45:00,2021-06-19,2021,6,24,19, Facebook , USA ,1
- Feeling grateful for the little things in life.    ,Positive,Positive,2,2,2023-01-16 09:10:00,2023-01-16,2023,1,3,16, Twitter  , India    ,1
-Participating in a school-wide art exhibition. Witnessing creativity and spreading positive vibes! ,Positive,Positive,2,2,2015-11-10 16:45:00,2015-11-10,2015,11,46,10, Instagram , USA,1
-Got my hands on the latest fantasy novel. Diving into realms of magic and adventure! ,Positive,Positive,2,2,2023-08-13 20:00:00,2023-08-13,2023,8,32,13, Instagram , UK,1
-" Numb to the chaos, emotions locked away, a stoic facade concealing the inner turmoil. ",Negative,Positive,0,2,2019-12-28 14:30:00,2019-12-28,2019,12,52,28, Instagram , Australia     ,0
- Hopeful about the prospects of a new business venture.,Positive,Positive,2,2,2017-12-08 19:15:00,2017-12-08,2017,12,49,8, Facebook , Canada    ,1
-"Soul-crushing disappointment, hopes shattered like fragile glass. ",Negative,Negative,0,0,2019-10-08 18:30:00,2019-10-08,2019,10,41,8, Twitter  , Spain        ,1
-Mastered the art of creating paper airplanes during lecture. Paper planes: Soaring to new heights! ,Positive,Positive,2,2,2023-08-21 15:45:00,2023-08-21,2023,8,34,21, Instagram , USA,1
-"Reflecting on a lifetime of memories, each wrinkle tells a story. Embracing the beauty of aging. #LifeReflections #BeautyInAging ",Positive,Positive,2,2,2023-06-12 18:00:00,2023-06-12,2023,6,24,12, Twitter , UK,1
-"Tears, the currency of grief, spent in the marketplace of lost love and longing. ",Negative,Negative,0,0,2016-12-22 21:45:00,2016-12-22,2016,12,51,22, Facebook , USA ,1
-"Haunted by regrets, the ghost of the past lingers relentlessly.   ",Negative,Positive,0,2,2018-12-15 10:00:00,2018-12-15,2018,12,50,15, Twitter  , France         ,0
-Successfully fundraising for a school charity initiative. The joy of giving back to the community! ,Positive,Positive,2,2,2019-04-05 17:30:00,2019-04-05,2019,4,14,5, Twitter , Canada,1
-Savoring the warmth of a cup of cocoa on a chilly winter evening.   ,Positive,Positive,2,2,2020-01-12 18:00:00,2020-01-12,2020,1,2,12, Instagram , Switzerland     ,1
-" Lost in the symphony of the night, a moonlit serenade that whispers tales of wanderlust and moonlit dreams. ",Positive,Positive,2,2,2021-05-08 22:00:00,2021-05-08,2021,5,18,8, Twitter , Canada ,1
-"In the cycling world championship, the climber conquers challenging terrains, symbolizing determination and achievement against all odds. ",Positive,Positive,2,2,2015-09-28 22:30:00,2015-09-28,2015,9,40,28, Facebook , Italy ,1
-Heartfelt gratitude for the laughter shared during a family reunion. ,Positive,Positive,2,2,2017-12-28 19:15:00,2017-12-28,2017,12,52,28, Facebook , Austria         ,1
- Planning a garden makeover for spring.             ,Positive,Positive,2,2,2023-01-28 14:45:00,2023-01-28,2023,1,4,28, Twitter  , USA      ,1
-"The echoes of solitude, a silent conversation between a soul and its shadows. ",Neutral,Negative,1,0,2016-06-15 22:30:00,2016-06-15,2016,6,24,15, Instagram , Spain ,0
-Receiving a heartfelt letter from a pen pal in another country. Connecting across the globe! ,Positive,Positive,2,2,2023-10-21 17:30:00,2023-10-21,2023,10,42,21, Facebook , Canada,1
-"Overflowing with joy, a cup of laughter shared with friends, a moment cherished. ",Positive,Positive,2,2,2023-03-10 14:30:00,2023-03-10,2023,3,10,10, Twitter , Japan ,1
- Reverence for the historical significance of a landmark.,Positive,Positive,2,2,2017-11-01 15:30:00,2017-11-01,2017,11,44,1, Twitter  , Australia ,1
-"Reconnecting with old friends over a cup of tea. Friendship, the true essence of companionship. #OldFriends #Companionship ",Positive,Positive,2,2,2023-06-18 11:30:00,2023-06-18,2023,6,24,18, Twitter , UK,1
-Exploring a new hobby of photography during free time. Capturing moments through a lens. ,Neutral,Positive,1,2,2023-10-10 14:15:00,2023-10-10,2023,10,41,10, Instagram , UK,0
-" Jealousy, a festering wound, the pain intensifying with each glance at the garden of others' achievements, blooming beyond the fence. ",Negative,Negative,0,0,2018-03-17 14:45:00,2018-03-17,2018,3,11,17, Twitter , UK ,1
-Decided to learn a new instrument. Day one: Still trying to figure out how to hold it. #MusicNovice #LearningJourney ,Negative,Positive,0,2,2023-06-02 14:30:00,2023-06-02,2023,6,22,2, Instagram , UK,0
-"In the ruins of hope, echoes of shattered dreams whisper tales of loss. ",Negative,Negative,0,0,2021-03-15 22:45:00,2021-03-15,2021,3,11,15, Facebook , Brazil ,1
-"Shattered by the echoes of a shattered dream, fragments of hope scattered. ",Negative,Negative,0,0,2017-09-10 19:15:00,2017-09-10,2017,9,36,10, Twitter , Australia ,1
-"Lost in the enchantment of Disneyland, each ride a journey into the realm of childhood fantasies. ",Positive,Positive,2,2,2022-09-28 15:45:00,2022-09-28,2022,9,39,28, Instagram , USA ,1
-"Emotional storm, a whirlwind of sadness engulfs every thought.    ",Negative,Negative,0,0,2017-07-18 17:45:00,2017-07-18,2017,7,29,18, Instagram , India          ,1
-" Torn between opposing emotions, an ambivalence that colors my decisions with shades of uncertainty. ",Neutral,Neutral,1,1,2022-07-08 11:30:00,2022-07-08,2022,7,27,8, Facebook , Australia    ,1
-Navigating through the challenges with determination.          ,Positive,Positive,2,2,2023-10-12 10:30:00,2023-10-12,2023,10,41,12, Twitter  , Canada            ,1
- Technology is changing the way we live.            ,Neutral,Positive,1,2,2023-01-19 09:45:00,2023-01-19,2023,1,3,19, Twitter  , India    ,0
- Gratitude for the supportive community around me.    ,Positive,Positive,2,2,2013-04-20 10:30:00,2013-04-20,2013,4,16,20, Instagram , USA ,1
-"Walking the Great Wall of China, each step a testament to ancient engineering marvels. ",Positive,Positive,2,2,2017-08-18 19:30:00,2017-08-18,2017,8,33,18, Twitter , China ,1
-" Yearning for the warmth of a vanished sun, a heartache painted in the hues of a sunset that never graced the horizon. ",Neutral,Positive,1,2,2020-04-18 16:15:00,2020-04-18,2020,4,16,18, Facebook , Australia ,0
-Awe-struck by the breathtaking sunrise over the mountains.      ,Positive,Positive,2,2,2022-04-03 06:15:00,2022-04-03,2022,4,13,3, Instagram , USA               ,1
- Reflecting on the beauty of diversity in our world.     ,Positive,Positive,2,2,2023-03-01 10:45:00,2023-03-01,2023,3,9,1, Twitter  , Australia ,1
-"The weightlifter's failed attempt at a personal record results in frustration, highlighting the challenging nature of pushing physical limits. ",Neutral,Positive,1,2,2022-01-08 21:30:00,2022-01-08,2022,1,1,8, Facebook , Germany ,0
-" Overwhelmed by grief, missing a loved one dearly.  ",Negative,Negative,0,0,2022-07-05 15:45:00,2022-07-05,2022,7,27,5, Instagram , Canada          ,1
-" Bathed in the glow of inspiration, a creative phoenix rising from the ashes of ordinary thoughts to explore new realms. ",Positive,Positive,2,2,2019-10-25 16:50:00,2019-10-25,2019,10,43,25, Twitter , UK ,1
- Enthusiasm for a creative project in the making.       ,Positive,Positive,2,2,2018-09-15 16:00:00,2018-09-15,2018,9,37,15, Facebook , Canada    ,1
- Suffering from despair after another setback.      ,Negative,Negative,0,0,2021-03-10 08:30:00,2021-03-10,2021,3,10,10, Twitter  , USA          ,1
-Awe-inspired by the vastness of the cosmos on a stargazing night.   ,Positive,Positive,2,2,2018-07-08 23:00:00,2018-07-08,2018,7,27,8, Instagram , South Africa    ,1
-" Overwhelmed by the maze of expectations, a minotaur of pressure lurking in the labyrinth, waiting to devour the spirit of resilience. ",Negative,Negative,0,0,2020-02-22 15:20:00,2020-02-22,2020,2,8,22, Facebook , USA ,1
-"Floating on clouds of gratitude, each raindrop a blessing, a shower of thankfulness. ",Positive,Positive,2,2,2016-12-10 21:15:00,2016-12-10,2016,12,49,10, Facebook , Germany ,1
-"Visited an art gallery, appreciating the brushstrokes that tell tales of creativity. Art, an eternal companion. #ArtGallery #SeniorArtLover ",Positive,Positive,2,2,2023-07-06 14:30:00,2023-07-06,2023,7,27,6, Facebook , USA,1
+text,actual_sentiment,predicted_sentiment,confidence_score,prediction_date
+"I absolutely love this product, it exceeded my expectations!",positive,positive,0.95,2026-01-05 09:15:00
+"Terrible experience, would not recommend to anyone.",negative,negative,0.92,2026-01-05 10:30:00
+"The service was okay, nothing special.",neutral,neutral,0.78,2026-01-05 14:45:00
+"Best purchase I've ever made, truly amazing quality!",positive,positive,0.97,2026-01-12 08:20:00
+"Worst customer service I have ever encountered.",negative,negative,0.89,2026-01-12 11:00:00
+"It works as described, does the job.",neutral,neutral,0.72,2026-01-12 16:30:00
+"Fantastic! I'm so happy with this purchase.",positive,positive,0.93,2026-01-19 09:00:00
+"Completely broken on arrival, total waste of money.",negative,negative,0.94,2026-01-19 13:15:00
+"Average product, meets basic needs.",neutral,neutral,0.68,2026-01-19 15:45:00
+"This changed my life, I can't imagine going without it.",positive,positive,0.91,2026-01-26 10:00:00
+"Disappointing quality, fell apart after one week.",negative,negative,0.87,2026-01-26 14:30:00
+"It's fine, nothing to complain about.",neutral,positive,0.52,2026-01-26 17:00:00
+"Incredible value for the price, highly recommend!",positive,positive,0.96,2026-02-02 08:45:00
+"Awful taste, had to throw it away immediately.",negative,negative,0.90,2026-02-02 11:30:00
+"Standard shipping time, arrived as expected.",neutral,neutral,0.75,2026-02-02 15:00:00
+"My family loves it, we use it every day!",positive,positive,0.88,2026-02-09 09:30:00
+"Leaked all over my bag, very poorly made.",negative,negative,0.86,2026-02-09 12:00:00
+"Decent quality for the price point.",neutral,neutral,0.70,2026-02-09 16:15:00
+"Exceeded all my expectations, will buy again!",positive,positive,0.94,2026-02-16 08:00:00
+"The instructions were impossible to follow.",negative,neutral,0.48,2026-02-16 10:45:00
+"Not bad, not great either.",neutral,neutral,0.65,2026-02-16 14:00:00
+"I've recommended this to all my friends!",positive,positive,0.89,2026-02-23 09:15:00
+"Complete scam, nothing like the advertisement.",negative,negative,0.93,2026-02-23 11:30:00
+"It does what it says, no more no less.",neutral,neutral,0.71,2026-02-23 16:00:00
+"The best gift I've ever given, everyone loved it!",positive,positive,0.92,2026-03-02 08:30:00
+"Broke after two uses, terrible durability.",negative,negative,0.88,2026-03-02 12:45:00
+"Shipping was on time, product was adequate.",neutral,neutral,0.67,2026-03-02 15:30:00
+"So comfortable, I bought three more!",positive,positive,0.90,2026-03-09 09:00:00
+"Made my skin break out terribly.",negative,negative,0.85,2026-03-09 13:00:00
+"It's an average product, works sometimes.",neutral,negative,0.51,2026-03-09 17:30:00
+"Beautiful design and amazing functionality!",positive,positive,0.95,2026-03-16 08:15:00
+"Never received my order, no response from support.",negative,negative,0.91,2026-03-16 10:00:00
+"Looks like the pictures, fits as expected.",neutral,neutral,0.73,2026-03-16 14:45:00
+"This is hands down the best on the market!",positive,positive,0.96,2026-03-23 09:30:00
+"Cheap materials, overpriced for what you get.",negative,negative,0.84,2026-03-23 11:15:00
+"Satisfactory, would consider buying again.",neutral,positive,0.55,2026-03-23 16:00:00
+"My kids absolutely adore this toy!",positive,positive,0.87,2026-03-30 08:00:00
+"Caused an allergic reaction, very dangerous!",negative,negative,0.92,2026-03-30 12:30:00
+"Regular product, nothing extraordinary.",neutral,neutral,0.69,2026-03-30 15:00:00
+"Outstanding customer service and fast delivery!",positive,positive,0.93,2026-04-06 09:45:00
+"The color faded after one wash.",negative,negative,0.83,2026-04-06 11:00:00
+"It's okay for occasional use.",neutral,neutral,0.66,2026-04-06 14:30:00
+"Perfect fit, exactly what I needed!",positive,positive,0.91,2026-04-06 17:00:00
+"Smells horrible, can't stand being near it.",negative,negative,0.90,2026-04-13 08:30:00
+"Came in standard packaging, looks fine.",neutral,neutral,0.64,2026-04-13 10:15:00
+"I'm obsessed with this product, 10/10!",positive,positive,0.97,2026-04-13 13:00:00
+"Motor stopped working after a month.",negative,negative,0.86,2026-04-13 15:45:00
+"It functions properly, basic features work.",neutral,neutral,0.70,2026-04-13 18:00:00
+"Absolutely stunning, worth every penny!",positive,positive,0.94,2026-04-18 09:00:00
+"Gave me food poisoning, stay away!",negative,negative,0.93,2026-04-18 11:30:00

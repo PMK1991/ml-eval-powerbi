@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(npx --version)",
+      "Bash(az --version)",
+      "Bash(claude mcp:*)",
+      "Bash(git fetch:*)",
+      "Bash(git stash:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(pip install:*)",
+      "Bash(where python:*)",
+      "Bash(C:\\\\Users\\\\pmkul\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python311\\\\python.exe:*)",
+      "Bash(awk -F',' 'NR>1 {print $2\",\"$3}' data/sentiment_test_results.csv)"
+    ]
+  }
+}

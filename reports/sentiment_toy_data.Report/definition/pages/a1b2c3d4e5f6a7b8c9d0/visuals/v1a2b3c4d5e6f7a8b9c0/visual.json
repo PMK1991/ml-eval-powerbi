@@ -1,0 +1,117 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "v1a2b3c4d5e6f7a8b9c0",
+  "position": {
+    "x": 20,
+    "y": 20,
+    "z": 1000,
+    "height": 340,
+    "width": 605,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "actual_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.actual_sentiment",
+              "nativeQueryRef": "actual_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "predicted_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.predicted_sentiment",
+              "nativeQueryRef": "predicted_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "confidence_score"
+                }
+              },
+              "queryRef": "sentiment_test_results.confidence_score",
+              "nativeQueryRef": "confidence_score"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "text"
+                }
+              },
+              "queryRef": "sentiment_test_results.text",
+              "nativeQueryRef": "text"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.metrics import classification_report\n\n# dataset = pandas.DataFrame(actual_sentiment, predicted_sentiment, confidence_score, text)\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\ny_test = dataset[''actual_sentiment'']\ny_predict = dataset[''predicted_sentiment'']\n\n# 1. Calculate Metrics\nreport = classification_report(y_test, y_predict, output_dict=True)\n\nmetrics = {\n    ''Accuracy'': report[''accuracy''],\n    ''Precision'': report[''macro avg''][''precision''],\n    ''Recall'': report[''macro avg''][''recall''],\n    ''F1 Score'': report[''macro avg''][''f1-score'']\n}\n\n# 2. Prepare Plot\nnames = list(metrics.keys())\nvalues = list(metrics.values())\n\nplt.rcParams.update({''font.size'': 14})\n\nfig, ax = plt.subplots(figsize=(10, 6))\n\n# 3. Create Bar Plot\ncolors = [''#084594'', ''#2171b5'', ''#4292c6'', ''#6baed6''] \nbars = ax.bar(names, values, color=colors)\n\n# 4. Add labels and formatting\nax.set_title(''Overall Sentiment Model Performance (Macro Avg)'')\nax.set_ylim(0, 1.15)\n\nfor bar in bars:\n    height = bar.get_height()\n    ax.text(bar.get_x() + bar.get_width()/2., height + 0.01,\n            f''{height:.1%}'',\n            ha=''center'', va=''bottom'', fontsize=14, fontweight=''bold'')\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

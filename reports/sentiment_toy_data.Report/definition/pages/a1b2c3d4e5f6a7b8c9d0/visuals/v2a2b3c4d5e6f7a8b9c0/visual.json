@@ -1,0 +1,117 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "v2a2b3c4d5e6f7a8b9c0",
+  "position": {
+    "x": 640,
+    "y": 20,
+    "z": 0,
+    "height": 340,
+    "width": 620,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "actual_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.actual_sentiment",
+              "nativeQueryRef": "actual_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "predicted_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.predicted_sentiment",
+              "nativeQueryRef": "predicted_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "confidence_score"
+                }
+              },
+              "queryRef": "sentiment_test_results.confidence_score",
+              "nativeQueryRef": "confidence_score"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "text"
+                }
+              },
+              "queryRef": "sentiment_test_results.text",
+              "nativeQueryRef": "text"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\n\n# dataset = pandas.DataFrame(actual_sentiment, predicted_sentiment, confidence_score, text)\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\ny_test = dataset[''actual_sentiment'']\ny_predict = dataset[''predicted_sentiment'']\n\nlabels = sorted(list(set(y_test.unique()) | set(y_predict.unique())))\n\ncm = confusion_matrix(y_test, y_predict, labels=labels)\nplt.rcParams.update({''font.size'': 16})\n\nfig, ax = plt.subplots(figsize=(12, 12)) \nax.set_title(''Sentiment Confusion Matrix'', pad=40, fontsize=16)\nvis = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)\nvis.plot(ax=ax, xticks_rotation=''vertical'', cmap=''Blues'')\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

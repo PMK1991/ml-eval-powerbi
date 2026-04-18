@@ -1,0 +1,129 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "4a20fc1f7c81442877da",
+  "position": {
+    "x": 368.88888888888886,
+    "y": 370,
+    "z": 0,
+    "height": 106.66666666666666,
+    "width": 282.22222222222223,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "predicted_species"
+                }
+              },
+              "queryRef": "iris_test_results.predicted_species",
+              "nativeQueryRef": "predicted_species",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "actual_species"
+                }
+              },
+              "queryRef": "iris_test_results.actual_species",
+              "nativeQueryRef": "Species",
+              "active": true,
+              "displayName": "Species"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "CM Count"
+                }
+              },
+              "queryRef": "iris_test_results.CM Count",
+              "nativeQueryRef": "CM Count"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "iris_test_results"
+                  }
+                },
+                "Property": "CM Count"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "blankRows": [
+        {
+          "properties": {
+            "showBlankRows": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

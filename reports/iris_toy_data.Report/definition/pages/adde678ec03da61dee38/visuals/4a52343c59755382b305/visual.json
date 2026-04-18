@@ -1,0 +1,173 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "4a52343c59755382b305",
+  "position": {
+    "x": 587.93220338983053,
+    "y": 16.271186440677965,
+    "z": 0,
+    "height": 441.49152542372883,
+    "width": 643.25423728813564,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "actual_label"
+                }
+              },
+              "queryRef": "iris_test_results.actual_label",
+              "nativeQueryRef": "actual_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "actual_species"
+                }
+              },
+              "queryRef": "iris_test_results.actual_species",
+              "nativeQueryRef": "actual_species"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "petal length (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.petal length (cm)",
+              "nativeQueryRef": "petal length (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "petal width (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.petal width (cm)",
+              "nativeQueryRef": "petal width (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "predicted_label"
+                }
+              },
+              "queryRef": "iris_test_results.predicted_label",
+              "nativeQueryRef": "predicted_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "predicted_species"
+                }
+              },
+              "queryRef": "iris_test_results.predicted_species",
+              "nativeQueryRef": "predicted_species"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "sepal length (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.sepal length (cm)",
+              "nativeQueryRef": "sepal length (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "sepal width (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.sepal width (cm)",
+              "nativeQueryRef": "sepal width (cm)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\n\n# dataset = pandas.DataFrame(actual_label, actual_species, petal length (cm), petal width (cm), predicted_label, predicted_species, sepal length (cm), sepal width (cm))\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\ny_test = dataset[''actual_species'']\ny_predict = dataset[''predicted_species'']\n\n# 1. Get all unique labels from both actual and predicted columns and sort them\nlabels = sorted(list(set(y_test.unique()) | set(y_predict.unique())))\n\n# 2. Pass ''labels'' to confusion_matrix to ensure the matrix follows the sorted order\ncm = confusion_matrix(y_test, y_predict, labels=labels)\nplt.rcParams.update({''font.size'': 16})\n# 3. Pass ''display_labels'' to the visualizer so they appear on the plot\n# Increasing figsize helps if you have many classes\nfig, ax = plt.subplots(figsize=(12, 12)) \nax.set_title(''Confusion Matrix'', pad=40, fontsize=16)\nvis = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)\nvis.plot(ax=ax, xticks_rotation=''vertical'', cmap=''Blues'') # Rotate labels if they are long\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
