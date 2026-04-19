@@ -1,0 +1,173 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "4a52343c59755382b305",
+  "position": {
+    "x": 640,
+    "y": 20,
+    "z": 0,
+    "height": 340,
+    "width": 620,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "actual_label"
+                }
+              },
+              "queryRef": "iris_test_results.actual_label",
+              "nativeQueryRef": "actual_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "actual_species"
+                }
+              },
+              "queryRef": "iris_test_results.actual_species",
+              "nativeQueryRef": "actual_species"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "petal length (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.petal length (cm)",
+              "nativeQueryRef": "petal length (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "petal width (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.petal width (cm)",
+              "nativeQueryRef": "petal width (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "predicted_label"
+                }
+              },
+              "queryRef": "iris_test_results.predicted_label",
+              "nativeQueryRef": "predicted_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "predicted_species"
+                }
+              },
+              "queryRef": "iris_test_results.predicted_species",
+              "nativeQueryRef": "predicted_species"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "sepal length (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.sepal length (cm)",
+              "nativeQueryRef": "sepal length (cm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_test_results"
+                    }
+                  },
+                  "Property": "sepal width (cm)"
+                }
+              },
+              "queryRef": "iris_test_results.sepal width (cm)",
+              "nativeQueryRef": "sepal width (cm)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\n\n# dataset = pandas.DataFrame(actual_label, actual_species, petal length (cm), petal width (cm), predicted_label, predicted_species, sepal length (cm), sepal width (cm))\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\ny_test = dataset[''actual_species'']\ny_predict = dataset[''predicted_species'']\n\nlabels = sorted(list(set(y_test.unique()) | set(y_predict.unique())))\n\ncm = confusion_matrix(y_test, y_predict, labels=labels)\nplt.rcParams.update({''font.size'': 18})\n\nfig, ax = plt.subplots(figsize=(10, 7))\nvis = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)\nvis.plot(ax=ax, xticks_rotation=45, cmap=''Blues'', values_format=''d'')\nax.set_title(''Confusion Matrix'', pad=20, fontsize=20, fontweight=''bold'')\nax.set_xlabel(''Predicted'', fontsize=16, fontweight=''bold'')\nax.set_ylabel(''Actual'', fontsize=16, fontweight=''bold'')\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

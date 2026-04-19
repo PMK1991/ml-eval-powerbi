@@ -1,0 +1,117 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "v3a2b3c4d5e6f7a8b9c0",
+  "position": {
+    "x": 20,
+    "y": 375,
+    "z": 2000,
+    "height": 325,
+    "width": 1240,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "actual_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.actual_sentiment",
+              "nativeQueryRef": "actual_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "predicted_sentiment"
+                }
+              },
+              "queryRef": "sentiment_test_results.predicted_sentiment",
+              "nativeQueryRef": "predicted_sentiment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "confidence_score"
+                }
+              },
+              "queryRef": "sentiment_test_results.confidence_score",
+              "nativeQueryRef": "confidence_score"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sentiment_test_results"
+                    }
+                  },
+                  "Property": "text"
+                }
+              },
+              "queryRef": "sentiment_test_results.text",
+              "nativeQueryRef": "text"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# The following code to create a dataframe and remove duplicated rows is always executed and acts as a preamble for your script: \nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport numpy as np\nfrom sklearn.metrics import classification_report\n\n# dataset = pandas.DataFrame(actual_sentiment, predicted_sentiment, confidence_score, text)\n# dataset = dataset.drop_duplicates()\n\n# Paste or type your script code here:\n\ny_test = dataset[''actual_sentiment'']\ny_predict = dataset[''predicted_sentiment'']\n\nreport = classification_report(y_test, y_predict, output_dict=True, zero_division=0)\n\ndf_report = pd.DataFrame(report).transpose()\n\ndf_class_metrics = df_report.drop([''accuracy'', ''macro avg'', ''weighted avg''], errors=''ignore'')\n\nplot_data = df_class_metrics[[''precision'', ''recall'', ''f1-score'']]\n\nprint(\"\\nClass-wise Metrics:\")\nprint(plot_data)\n\nplt.rcParams.update({''font.size'': 12})\n\nfig_height = max(6, len(plot_data) * 0.5)\nfig, ax = plt.subplots(figsize=(10, fig_height))\n\ncax = ax.imshow(plot_data.values, cmap=''Blues'', vmin=0, vmax=1, aspect=''auto'')\n\nax.set_xticks(np.arange(len(plot_data.columns)))\nax.set_xticklabels(plot_data.columns, fontsize=14, fontweight=''bold'')\nax.xaxis.tick_top()\n\nax.set_yticks(np.arange(len(plot_data.index)))\nax.set_yticklabels(plot_data.index, fontsize=12)\n\ncbar = fig.colorbar(cax, ax=ax, fraction=0.046, pad=0.04)\ncbar.set_label(''Score'', rotation=270, labelpad=15)\n\nfor i in range(len(plot_data.index)):\n    for j in range(len(plot_data.columns)):\n        val = plot_data.values[i, j]\n        text_color = \"white\" if val > 0.5 else \"black\"\n        ax.text(j, i, f\"{val:.1%}\",\n                ha=\"center\", va=\"center\", color=text_color, fontsize=12)\n\nax.set_title(''Sentiment Class-wise Performance Matrix'', pad=40, fontsize=16)\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

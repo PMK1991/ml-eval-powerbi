@@ -21,13 +21,15 @@ ml-eval-powerbi/
 │   ├── generate_html_report.py          # Generate standalone HTML report
 │   └── generate_summary_report.py       # Generate summary statistics
 ├── reports/
-│   ├── iris_toy_data.pbip               # Iris classification Power BI project
-│   ├── iris_toy_data.pbix               # Iris classification Power BI file (legacy)
-│   ├── iris_toy_data.Report/            # Iris report definition (2 pages)
-│   ├── iris_toy_data.SemanticModel/     # Iris semantic model (TMDL)
-│   ├── sentiment_toy_data.pbip          # Sentiment classification Power BI project
-│   ├── sentiment_toy_data.Report/       # Sentiment report definition (3 pages)
-│   └── sentiment_toy_data.SemanticModel/# Sentiment semantic model (TMDL)
+│   ├── iris_toy_data/                   # Iris classification report
+│   │   ├── iris_toy_data.pbip           # Power BI project file
+│   │   ├── iris_toy_data.pbix           # Legacy Power BI file
+│   │   ├── iris_toy_data.Report/        # Report definition (2 pages)
+│   │   └── iris_toy_data.SemanticModel/ # Semantic model (TMDL)
+│   └── sentiment_toy_data/              # Sentiment classification report
+│       ├── sentiment_toy_data.pbip      # Power BI project file
+│       ├── sentiment_toy_data.Report/   # Report definition (3 pages)
+│       └── sentiment_toy_data.SemanticModel/ # Semantic model (TMDL)
 └── medium_mcp_server/                   # MCP server for Medium API integration
 ```
 
@@ -131,8 +133,8 @@ python scripts/train_3class_model.py
 1. Open Power BI Desktop
 2. Go to **File > Open report > Browse this device**
 3. Navigate to `reports/` and open either:
-   - `iris_toy_data.pbip` (Iris classification)
-   - `sentiment_toy_data.pbip` (Sentiment classification)
+   - `reports/iris_toy_data/iris_toy_data.pbip` (Iris classification)
+   - `reports/sentiment_toy_data/sentiment_toy_data.pbip` (Sentiment classification)
 4. When prompted, update the data source path:
    - Go to **Transform Data > Data Source Settings**
    - Update the CSV file path to point to the `data/` folder on your machine
@@ -149,7 +151,7 @@ The PBIP semantic model references a local CSV path. To update it:
 
 1. Open the `.tmdl` file for the table in:
    ```
-   reports/<report>.SemanticModel/definition/tables/<table>.tmdl
+   reports/<report>/<report>.SemanticModel/definition/tables/<table>.tmdl
    ```
 2. Find the `partition` section and update the `File.Contents()` path:
    ```
