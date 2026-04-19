@@ -30,7 +30,6 @@ ml-eval-powerbi/
 │       ├── sentiment_toy_data.pbip      # Power BI project file
 │       ├── sentiment_toy_data.Report/   # Report definition (3 pages)
 │       └── sentiment_toy_data.SemanticModel/ # Semantic model (TMDL)
-└── medium_mcp_server/                   # MCP server for Medium API integration
 ```
 
 ## Power BI Reports
@@ -62,16 +61,16 @@ Both reports use the same pattern of DAX measures:
 |---------|-------------|
 | `Total Predictions` | Total row count |
 | `Correct Predictions` | Rows where actual = predicted |
-| `Accuracy` | Correct / Total |
+| `Accuracy` | Correct / Total (displayed as %) |
 | `True Positives` | Per-class TP count |
 | `False Positives` | Per-class FP count |
 | `False Negatives` | Per-class FN count |
-| `Macro Precision` | Average of per-class TP/(TP+FP) |
-| `Macro Recall` | Average of per-class TP/(TP+FN) |
-| `Macro F1 Score` | Harmonic mean of macro precision and recall |
-| `Class Precision` | Per-class precision (for use in row context) |
-| `Class Recall` | Per-class recall (for use in row context) |
-| `Class F1 Score` | Per-class F1 (for use in row context) |
+| `Macro Precision` | Average of per-class TP/(TP+FP) (displayed as %) |
+| `Macro Recall` | Average of per-class TP/(TP+FN) (displayed as %) |
+| `Macro F1 Score` | Harmonic mean of macro precision and recall (displayed as %) |
+| `Class Precision` | Per-class precision (displayed as %) |
+| `Class Recall` | Per-class recall (displayed as %) |
+| `Class F1 Score` | Per-class F1 (displayed as %) |
 | `CM Count` | Confusion matrix cell count |
 | `Avg Confidence` | Mean confidence score (sentiment report only) |
 
@@ -142,7 +141,7 @@ python scripts/train_3class_model.py
 
 **Option B — Open the legacy PBIX file:**
 
-1. Open `reports/iris_toy_data.pbix` directly in Power BI Desktop
+1. Open `reports/iris_toy_data/iris_toy_data.pbix` directly in Power BI Desktop
 2. Update the data source path as described above
 
 ### 5. Update the Data Source Path
