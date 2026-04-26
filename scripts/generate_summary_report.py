@@ -2,10 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+from dotenv import load_dotenv
 
-# Resolve paths relative to project root
+# Resolve paths: prefer .env, fall back to relative project structure
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+load_dotenv(os.path.join(PROJECT_ROOT, '.env'))
+DATA_DIR = os.environ.get('DATA_FOLDER_PATH', os.path.join(PROJECT_ROOT, 'data'))
 REPORTS_DIR = os.path.join(PROJECT_ROOT, 'reports')
 
 # Set style

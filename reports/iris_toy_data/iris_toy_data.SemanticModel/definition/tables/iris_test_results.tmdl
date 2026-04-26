@@ -290,7 +290,7 @@ table iris_test_results
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\pmkul\Downloads\ml-eval-powerbi\data\iris_test_results.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents(DataFolderPath & "\iris_test_results.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"sepal length (cm)", type number}, {"sepal width (cm)", type number}, {"petal length (cm)", type number}, {"petal width (cm)", type number}, {"actual_label", Int64.Type}, {"actual_species", type text}, {"predicted_label", Int64.Type}, {"predicted_species", type text}})
 				in

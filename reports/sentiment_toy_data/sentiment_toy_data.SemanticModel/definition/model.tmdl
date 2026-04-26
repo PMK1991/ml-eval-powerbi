@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["sentiment_test_results"]
+annotation PBI_QueryOrder = ["DataFolderPath","sentiment_test_results"]
 
 annotation PBI_ProTooling = ["DevMode"]
 

@@ -4,9 +4,11 @@ Run this to generate Power Query M code and DAX measures for manual import.
 """
 
 import os
+from dotenv import load_dotenv
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-folder = os.path.join(PROJECT_ROOT, 'data')
+load_dotenv(os.path.join(PROJECT_ROOT, '.env'))
+folder = os.environ.get('DATA_FOLDER_PATH', os.path.join(PROJECT_ROOT, 'data'))
 
 print("=" * 60)
 print("POWER BI MANUAL SETUP INSTRUCTIONS")

@@ -31,3 +31,7 @@ nul
 # Generated reports (regenerate via scripts/)
 reports/*.html
 reports/*.png
+
+# Power BI data path parameters (machine-specific, set via open_report.py)
+reports/**/expressions.tmdl
+reports/**/expressions/

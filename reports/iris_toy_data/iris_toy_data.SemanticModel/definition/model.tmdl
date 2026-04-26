@@ -8,11 +8,13 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["iris_test_results"]
+annotation PBI_QueryOrder = ["DataFolderPath","iris_test_results"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table iris_test_results
+
+ref expression DataFolderPath
 
 ref cultureInfo en-US
 

@@ -11,10 +11,12 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, f1_score
 import warnings
 warnings.filterwarnings('ignore')
+from dotenv import load_dotenv
 
-# Resolve paths relative to project root
+# Resolve paths: prefer .env, fall back to relative project structure
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+load_dotenv(os.path.join(PROJECT_ROOT, '.env'))
+DATA_DIR = os.environ.get('DATA_FOLDER_PATH', os.path.join(PROJECT_ROOT, 'data'))
 
 # Sentiment mapping to 3 categories
 POSITIVE = [

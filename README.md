@@ -6,6 +6,7 @@ Evaluate ML classification models and visualize results using Power BI PBIP (Pow
 
 ```
 ml-eval-powerbi/
+├── .env.example                           # Template — copy to .env and set DATA_FOLDER_PATH
 ├── data/
 │   ├── iris_test_results.csv            # Iris 3-class classification results (150 rows)
 │   ├── sentiment_test_results.csv       # Sentiment 3-class classification results (50 rows)
@@ -16,6 +17,7 @@ ml-eval-powerbi/
 │   ├── iris_toy_dataset.ipynb           # Iris model training and evaluation
 │   └── sentiment_analysis.ipynb         # Sentiment model training and evaluation
 ├── scripts/
+│   ├── open_report.py                   # Inject data path from .env and open Power BI
 │   ├── train_3class_model.py            # Train a 3-class sentiment classifier
 │   ├── create_powerbi_report.py         # Generate Power BI report programmatically
 │   ├── generate_html_report.py          # Generate standalone HTML report
@@ -78,7 +80,7 @@ Both reports use the same pattern of DAX measures:
 
 - **Power BI Desktop** (December 2025 or later) with PBIP format enabled
 - **Python 3.9+** (for Python visuals and notebooks)
-- Python packages: `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `numpy`
+- Python packages: `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `numpy`, `python-dotenv`
 
 ### Enable PBIP Format in Power BI Desktop
 
@@ -101,7 +103,7 @@ cd ml-eval-powerbi
 ### 2. Install Python Dependencies
 
 ```bash
-pip install pandas matplotlib seaborn scikit-learn numpy jupyter
+pip install pandas matplotlib seaborn scikit-learn numpy jupyter python-dotenv
 ```
 
 ### 3. Generate the Datasets (Optional)
@@ -125,38 +127,35 @@ Or train the sentiment model directly:
 python scripts/train_3class_model.py
 ```
 
-### 4. Open the Power BI Reports
+### 4. Configure the Data Source Path
 
-**Option A — Open the PBIP project (recommended):**
+The Power BI reports load CSV files from a `DataFolderPath` parameter. A launcher script reads the path from `.env` and injects it into the report before opening Power BI Desktop.
 
-1. Open Power BI Desktop
-2. Go to **File > Open report > Browse this device**
-3. Navigate to `reports/` and open either:
-   - `reports/iris_toy_data/iris_toy_data.pbip` (Iris classification)
-   - `reports/sentiment_toy_data/sentiment_toy_data.pbip` (Sentiment classification)
-4. When prompted, update the data source path:
-   - Go to **Transform Data > Data Source Settings**
-   - Update the CSV file path to point to the `data/` folder on your machine
-5. Click **Refresh** to load the data
+**One-time setup:**
 
-**Option B — Open the legacy PBIX file:**
+```bash
+copy .env.example .env
+```
 
-1. Open `reports/iris_toy_data/iris_toy_data.pbix` directly in Power BI Desktop
-2. Update the data source path as described above
+Edit `.env` and set the absolute path to your `data/` folder:
 
-### 5. Update the Data Source Path
+```
+DATA_FOLDER_PATH=C:\Users\<you>\Downloads\ml-eval-powerbi\data
+```
 
-The PBIP semantic model references a local CSV path. To update it:
+### 5. Open the Power BI Reports
 
-1. Open the `.tmdl` file for the table in:
-   ```
-   reports/<report>/<report>.SemanticModel/definition/tables/<table>.tmdl
-   ```
-2. Find the `partition` section and update the `File.Contents()` path:
-   ```
-   File.Contents("C:\<your-path>\ml-eval-powerbi\data\<dataset>.csv")
-   ```
-3. Save and reopen the report in Power BI Desktop
+Use the launcher script — it writes `DATA_FOLDER_PATH` from `.env` into the report's `expressions.tmdl` and then opens Power BI Desktop:
+
+```bash
+python scripts/open_report.py sentiment   # open sentiment report
+python scripts/open_report.py iris        # open iris report
+python scripts/open_report.py             # open both
+```
+
+> **Note:** Do not open `.pbip` files directly by double-clicking. The launcher script must run first to set the correct data path for your machine.
+
+Click **Refresh** in Power BI Desktop after the report opens to load the data.
 
 ### 6. Verify the Reports
 

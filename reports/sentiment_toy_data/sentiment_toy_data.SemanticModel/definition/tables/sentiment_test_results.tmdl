@@ -147,9 +147,9 @@ table sentiment_test_results
 			VAR ActualClass = SELECTEDVALUE(sentiment_test_results[actual_sentiment])
 			VAR PredictedClass = SELECTEDVALUE(sentiment_test_results[predicted_sentiment])
 			RETURN
-			0 + COUNTROWS(
+			COUNTROWS(
 			    FILTER(
-			        ALL(sentiment_test_results),
+			        ALLSELECTED(sentiment_test_results),
 			        sentiment_test_results[actual_sentiment] = ActualClass &&
 			        sentiment_test_results[predicted_sentiment] = PredictedClass
 			    )
@@ -308,7 +308,7 @@ table sentiment_test_results
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\pmkul\Downloads\ml-eval-powerbi\data\sentiment_test_results.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.Csv]),
+				    Source = Csv.Document(File.Contents(DataFolderPath & "\sentiment_test_results.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.Csv]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"text", type text}, {"actual_sentiment", type text}, {"predicted_sentiment", type text}, {"confidence_score", type number}, {"prediction_date", type datetime}})
 				in
